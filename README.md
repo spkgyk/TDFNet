@@ -38,7 +38,7 @@ To install and use TDFNet, follow these steps:
 
 1. **Clone the Repository:**
    - Ensure you have Git installed on your system.
-   - Clone this repository to your local machine using `git clone https://github.com/spkgyk/av-separation.git`.
+   - Clone this repository to your local machine using `git clone https://github.com/spkgyk/TDFNet.git`.
 
 2. **Setup Environment:**
    - Make sure you have Conda installed. If not, install [Anaconda](https://www.anaconda.com/products/individual) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
