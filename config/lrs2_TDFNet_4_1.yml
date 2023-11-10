@@ -41,16 +41,16 @@ audionet:
       norm_type: gLN
       act_type: PReLU
       upsampling_depth: 5
-      repeats: 16
+      repeats: 4
       shared: true
       is2d: false
       layers:
         layer_1:
-          layer_type: GlobalAttention
-          ffn_name: FeedForwardNetwork
-          kernel_size: 5
-          n_head: 8
+          layer_type: GlobalAttentionRNN
+          hid_chan: 512
           dropout: 0.1
+          rnn_type: GRU
+          bidirectional: True
 
     video_params:
       video_net: TDANet
@@ -61,7 +61,7 @@ audionet:
       norm_type: BatchNorm1d
       act_type: PReLU
       upsampling_depth: 4
-      repeats: 3
+      repeats: 1
       shared: true
       is2d: false
       layers:
@@ -114,4 +114,4 @@ data:
 log:
     path: log/tmp
     pro_name: project
-    exp_name: TDFNet/LRS2/16_3_mhsa_shared
+    exp_name: TDFNet/LRS2/4_1

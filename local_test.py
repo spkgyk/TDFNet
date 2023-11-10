@@ -147,7 +147,7 @@ def main(conf, epochs=1, bs=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--conf-dir", type=str, default="config/lrs2_TDFNet_16_3.yml", help="config path")
+    parser.add_argument("-c", "--conf-dir", type=str, default="config/lrs2_TDFNet_4_1.yml", help="config path")
     parser.add_argument("-n", "--name", default=None, help="Experiment name")
     parser.add_argument("--nodes", type=int, default=1, help="#node")
     parser.add_argument("--check-only", type=bool, default=False, help="Only check params and MACs")
