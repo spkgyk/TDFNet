@@ -51,6 +51,10 @@ To install and use TDFNet, follow these steps:
 4. **Run the Setup Script:**
    - Execute the `setup/conda.sh` script by running `bash setup/conda.sh`.
    - This script will activate the base Conda environment, remove any existing environment named 'av', create a new 'av' environment, and install all required dependencies from the `setup/requirements.yml` file.
+  
+
+5. **Pretrained Video Model:**
+   - Please download the pretrained video module used in our experiments by visiting [CTCNet](https://github.com/JusperLee/CTCNet)'s official repository. Instructions for downloading the LRS2 dataset are also there.
 
 ---
 
