@@ -1,4 +1,4 @@
-# README for TDFNet
+# TDFNet
 
 Welcome to the GitHub repository for TDFNet: An Efficient Audio-Visual Speech Separation Model with Top-down Fusion. This repository contains the implementation of TDFNet, a state-of-the-art method for audio-visual speech separation.
 
