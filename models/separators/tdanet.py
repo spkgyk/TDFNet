@@ -43,6 +43,8 @@ class TDANetBlock(nn.Module):
             in_chan=self.in_chan,
             out_chan=self.hid_chan,
             kernel_size=1,
+            norm_type=self.norm_type,
+            act_type=self.act_type,
             is2d=self.is2d,
         )
         self.downsample_layers = self.__build_downsample_layers()
@@ -141,7 +143,7 @@ class TDANet(nn.Module):
         norm_type: str = "gLN",
         act_type: str = "PReLU",
         upsampling_depth: int = 4,
-        layers: list[dict] = [],
+        layers: dict = dict(),
         repeats: int = 4,
         shared: bool = False,
         is2d: bool = False,

@@ -45,12 +45,12 @@ To install and use TDFNet, follow these steps:
    - Navigate to the cloned repository's directory in your terminal.
 
 3. **Modify Requirements File (Optional for Users in China):**
-   - Open the `setup/requirements.yml` file.
+   - Open the `setup/requirements.yaml` file.
    - If you are in China and need to use a pip mirror, uncomment the line `- -i https://pypi.tuna.tsinghua.edu.cn/simple` under the `pip` section.
 
 4. **Run the Setup Script:**
    - Execute the `setup/conda.sh` script by running `bash setup/conda.sh`.
-   - This script will activate the base Conda environment, remove any existing environment named 'av', create a new 'av' environment, and install all required dependencies from the `setup/requirements.yml` file.
+   - This script will activate the base Conda environment, remove any existing environment named 'av', create a new 'av' environment, and install all required dependencies from the `setup/requirements.yaml` file.
   
 
 5. **Pretrained Video Model:**
@@ -59,3 +59,22 @@ To install and use TDFNet, follow these steps:
 ---
 
 We hope this repository aids researchers and developers in their pursuit of efficient and effective audio-visual speech separation solutions. For more details, please refer to our paper "TDFNet: An Efficient Audio-Visual Speech Separation Model with Top-down Fusion".
+
+## Acknowledgements
+
+This implementation contains code from the [Asteroid](https://github.com/asteroid-team/asteroid) GitHub.
+The configuration files are compatible with the GitHub repository for our other publication, [RTFS-Net](https://github.com/spkgyk/RTFS-Net.git).
+
+## Citations
+
+If you find this code useful in your research, please cite our work:
+```
+@inproceedings{pegg2023tdfnet,
+  title={TDFNet: An Efficient Audio-Visual Speech Separation Model with Top-down Fusion},
+  author={Pegg, Samuel and Li, Kai and Hu, Xiaolin},
+  booktitle={2023 13th International Conference on Information Science and Technology (ICIST)},
+  pages={243--252},
+  year={2023},
+  organization={IEEE}
+}
+```

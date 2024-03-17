@@ -75,7 +75,7 @@ def main(conf, epochs=1, bs=None):
     conf["main_args"]["exp_dir"] = os.path.join("../experiments/audio-visual", "testing")
     exp_dir = conf["main_args"]["exp_dir"]
     os.makedirs(exp_dir, exist_ok=True)
-    conf_path = os.path.join(exp_dir, "conf.yml")
+    conf_path = os.path.join(exp_dir, "conf.yaml")
     with open(conf_path, "w") as outfile:
         yaml.safe_dump(conf, outfile)
 
@@ -147,7 +147,7 @@ def main(conf, epochs=1, bs=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-c", "--conf-dir", type=str, default="config/lrs2_TDFNet_4_1.yml", help="config path")
+    parser.add_argument("-c", "--conf-dir", type=str, default="config/lrs2_TDFNet_4_1.yaml", help="config path")
     parser.add_argument("-n", "--name", default=None, help="Experiment name")
     parser.add_argument("--nodes", type=int, default=1, help="#node")
     parser.add_argument("--check-only", type=bool, default=False, help="Only check params and MACs")
